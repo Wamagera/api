@@ -1,4 +1,4 @@
-import os 
+import os
 class config(object):
     DEBUG = False
     CSRF_ENABLED= True
@@ -11,21 +11,19 @@ class TestingConfig(config):
     DEBUG = True
 
 class StagingConfig(Config):
-    
+
     DEBUG = True
 
 
 class ProductionConfig(Config):
-   
+
     DEBUG = False
     TESTING = False
-    
+
 app_config = {
     'development': DevelopmentConfig,
     'testing': TestingConfig,
     'staging': StagingConfig,
     'production': ProductionConfig,
 }
-
-
-  
+''
