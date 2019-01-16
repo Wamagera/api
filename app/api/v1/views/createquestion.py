@@ -16,7 +16,7 @@ class questions (Resource):
             if (title==questions[""]):
                 return "invalid format! please enter a title"
             if (question==questions[""]):
-                return"invalid format! please enter a question"
+                return"invalid format! please enter a question."
 
         question = {
         "title":args[]"title"],
